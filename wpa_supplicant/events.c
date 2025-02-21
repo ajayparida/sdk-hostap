@@ -2519,7 +2519,7 @@ static void wnm_process_assoc_resp(struct wpa_supplicant *wpa_s,
 			WPA_GET_LE16(elems.bss_max_idle_period);
 		wpa_printf(MSG_ERROR, "User config max idle period = %u "
                            "(*1000 TU)", wpa_s->conf->bss_max_idle_period);
-		wpa_printf(MSG_ERROR "AP config max idle period = %u "
+		wpa_printf(MSG_ERROR, "AP config max idle period = %u "
 			   "(*1000 TU)", wpa_s->sme.bss_max_idle_period);
 		wpa_printf(MSG_DEBUG, "WNM: BSS Max Idle Period: %u (* 1000 "
 			   "TU)%s", wpa_s->sme.bss_max_idle_period,
